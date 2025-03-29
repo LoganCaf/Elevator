@@ -9,10 +9,10 @@ TEST_CASE("Elevator add 10", "[ElevatorAddTarget]") {
     elevator.AddDestination(10);
     REQUIRE(elevator.GetCurrentFloor() == 0);
     REQUIRE(elevator.GetTravelTime() == 0);
-    std::vector<uint16_t> visited;
+    std::vector<int32_t> visited;
     visited. push_back(0);
     REQUIRE(elevator.GetVisited() == visited);
-    std::vector<uint16_t> targets;
+    std::vector<int32_t> targets;
     targets. push_back(10);
     REQUIRE(elevator.GetTargets() == targets);
 }
@@ -22,10 +22,10 @@ TEST_CASE("Elevator add itself", "[ElevatorAddTarget]") {
     elevator.AddDestination(0);
     REQUIRE(elevator.GetCurrentFloor() == 0);
     REQUIRE(elevator.GetTravelTime() == 0);
-    std::vector<uint16_t> visited;
+    std::vector<int32_t> visited;
     visited. push_back(0);
     REQUIRE(elevator.GetVisited() == visited);
-    std::vector<uint16_t> targets;
+    std::vector<int32_t> targets;
     targets. push_back(0);
     REQUIRE(elevator.GetTargets() == targets);
 }
@@ -35,10 +35,10 @@ TEST_CASE("Elevator add 255", "[ElevatorAddTarget]") {
     elevator.AddDestination(255);
     REQUIRE(elevator.GetCurrentFloor() == 0);
     REQUIRE(elevator.GetTravelTime() == 0);
-    std::vector<uint16_t> visited;
+    std::vector<int32_t> visited;
     visited. push_back(0);
     REQUIRE(elevator.GetVisited() == visited);
-    std::vector<uint16_t> targets;
+    std::vector<int32_t> targets;
     targets. push_back(0);
     REQUIRE(elevator.GetTargets() == targets);
 }
@@ -50,10 +50,10 @@ TEST_CASE("Elevator add 255 0 itself", "[ElevatorAddTarget]") {
     elevator.AddDestination(10);
     REQUIRE(elevator.GetCurrentFloor() == 0);
     REQUIRE(elevator.GetTravelTime() == 0);
-    std::vector<uint16_t> visited;
+    std::vector<int32_t> visited;
     visited. push_back(10);
     REQUIRE(elevator.GetVisited() == visited);
-    std::vector<uint16_t> targets;
+    std::vector<int32_t> targets;
     targets. push_back(255);
     targets. push_back(0);
     targets. push_back(10);

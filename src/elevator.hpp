@@ -7,21 +7,21 @@
 
 class Elevator{
     public:
-    Elevator(const uint16_t currentFloor);
-    void Move(const uint16_t targetFloor);
-    void AddDestination(const uint16_t targetFloor);
+    Elevator(const int32_t currentFloor);
+    void Move(const int32_t targetFloor);
+    void AddDestination(const int32_t targetFloor);
     void VisitAll();
 
     // needed for testing
-    uint16_t GetCurrentFloor();
+    int32_t GetCurrentFloor();
     uint32_t GetTravelTime();
-    std::vector<uint16_t> GetVisited();
-    std::vector<uint16_t> GetTargets();
+    std::vector<int32_t> GetVisited();
+    std::vector<int32_t> GetTargets();
     private:
-    uint16_t currentFloor;
+    int32_t currentFloor;
     uint32_t travelTime;
-    std::vector<uint16_t> visited;
-    std::vector<uint16_t> targets;
+    std::vector<int32_t> visited;
+    std::vector<int32_t> targets;
 };
 
 #endif

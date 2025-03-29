@@ -9,11 +9,11 @@ TEST_CASE("Elevator moves to 3", "[ElevatorMove]") {
     elevator.Move(3);
     REQUIRE(elevator.GetCurrentFloor() == 3);
     REQUIRE(elevator.GetTravelTime() == 30);
-    std::vector<uint16_t> visited;
+    std::vector<int32_t> visited;
     visited. push_back(0);
     visited. push_back(3);
     REQUIRE(elevator.GetVisited() == visited);
-    REQUIRE(elevator.GetTargets() == std::vector<uint16_t>());
+    REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }
 
 TEST_CASE("Elevator moves to 255", "[ElevatorMove]") {
@@ -21,11 +21,11 @@ TEST_CASE("Elevator moves to 255", "[ElevatorMove]") {
     elevator.Move(255);
     REQUIRE(elevator.GetCurrentFloor() == 255);
     REQUIRE(elevator.GetTravelTime() == 2550);
-    std::vector<uint16_t> visited;
+    std::vector<int32_t> visited;
     visited. push_back(0);
     visited. push_back(255);
     REQUIRE(elevator.GetVisited() == visited);
-    REQUIRE(elevator.GetTargets() == std::vector<uint16_t>());
+    REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }
 
 TEST_CASE("Elevator moves to 3 and 255", "[ElevatorMove]") {
@@ -34,12 +34,12 @@ TEST_CASE("Elevator moves to 3 and 255", "[ElevatorMove]") {
     elevator.Move(255);
     REQUIRE(elevator.GetCurrentFloor() == 255);
     REQUIRE(elevator.GetTravelTime() == 2580);
-    std::vector<uint16_t> visited;
+    std::vector<int32_t> visited;
     visited. push_back(0);
     visited. push_back(3);
     visited. push_back(255);
     REQUIRE(elevator.GetVisited() == visited);
-    REQUIRE(elevator.GetTargets() == std::vector<uint16_t>());
+    REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }
 
 TEST_CASE("Elevator moves to 0", "[ElevatorMove]") {
@@ -47,11 +47,11 @@ TEST_CASE("Elevator moves to 0", "[ElevatorMove]") {
     elevator.Move(0);
     REQUIRE(elevator.GetCurrentFloor() == 0);
     REQUIRE(elevator.GetTravelTime() == 1000);
-    std::vector<uint16_t> visited;
+    std::vector<int32_t> visited;
     visited. push_back(100);
     visited. push_back(0);
     REQUIRE(elevator.GetVisited() == visited);
-    REQUIRE(elevator.GetTargets() == std::vector<uint16_t>());
+    REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }
 
 TEST_CASE("Elevator moves to itself", "[ElevatorMove]") {
@@ -59,8 +59,8 @@ TEST_CASE("Elevator moves to itself", "[ElevatorMove]") {
     elevator.Move(0);
     REQUIRE(elevator.GetCurrentFloor() == 0);
     REQUIRE(elevator.GetTravelTime() == 0);
-    std::vector<uint16_t> visited;
+    std::vector<int32_t> visited;
     visited. push_back(0);
     REQUIRE(elevator.GetVisited() == visited);
-    REQUIRE(elevator.GetTargets() == std::vector<uint16_t>());
+    REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }

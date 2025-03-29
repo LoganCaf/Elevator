@@ -2,16 +2,17 @@
 #include <vector>
 #include "elevator.hpp"
 
-Elevator::Elevator(const uint16_t currentFloor){
+Elevator::Elevator(const int32_t currentFloor){
     this->currentFloor = currentFloor;
     travelTime = 0;
+    visited.push_back(currentFloor);
 }
 
-void Elevator::Move(const uint16_t targetFloor){
+void Elevator::Move(const int32_t targetFloor){
 
 }
 
-void Elevator::AddDestination(const uint16_t targetFloor){
+void Elevator::AddDestination(const int32_t targetFloor){
 
 }
 
@@ -19,7 +20,7 @@ void Elevator::VisitAll(){
 
 }
 
-uint16_t Elevator::GetCurrentFloor(){
+int32_t Elevator::GetCurrentFloor(){
     return currentFloor;
 }
 
@@ -27,10 +28,10 @@ uint32_t Elevator::GetTravelTime(){
     return travelTime;
 }
 
-std::vector<uint16_t> Elevator::GetVisited(){
+std::vector<int32_t> Elevator::GetVisited(){
     return visited;
 }
 
-std::vector<uint16_t> Elevator::GetTargets(){
+std::vector<int32_t> Elevator::GetTargets(){
     return targets;
 }
