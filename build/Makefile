@@ -542,6 +542,30 @@ Catch2WithMain/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
 .PHONY : Catch2WithMain/fast
 
+src/elevator.o: src/elevator.cpp.o
+.PHONY : src/elevator.o
+
+# target to build an object file
+src/elevator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/src/elevator.cpp.o
+.PHONY : src/elevator.cpp.o
+
+src/elevator.i: src/elevator.cpp.i
+.PHONY : src/elevator.i
+
+# target to preprocess a source file
+src/elevator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/src/elevator.cpp.i
+.PHONY : src/elevator.cpp.i
+
+src/elevator.s: src/elevator.cpp.s
+.PHONY : src/elevator.s
+
+# target to generate assembly for a file
+src/elevator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/src/elevator.cpp.s
+.PHONY : src/elevator.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -566,29 +590,101 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Elevator.dir/build.make CMakeFiles/Elevator.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-tests/elevatorTests.o: tests/elevatorTests.cpp.o
-.PHONY : tests/elevatorTests.o
+tests/elevatorTestsAddTarget.o: tests/elevatorTestsAddTarget.cpp.o
+.PHONY : tests/elevatorTestsAddTarget.o
 
 # target to build an object file
-tests/elevatorTests.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.o
-.PHONY : tests/elevatorTests.cpp.o
+tests/elevatorTestsAddTarget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.o
+.PHONY : tests/elevatorTestsAddTarget.cpp.o
 
-tests/elevatorTests.i: tests/elevatorTests.cpp.i
-.PHONY : tests/elevatorTests.i
+tests/elevatorTestsAddTarget.i: tests/elevatorTestsAddTarget.cpp.i
+.PHONY : tests/elevatorTestsAddTarget.i
 
 # target to preprocess a source file
-tests/elevatorTests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.i
-.PHONY : tests/elevatorTests.cpp.i
+tests/elevatorTestsAddTarget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.i
+.PHONY : tests/elevatorTestsAddTarget.cpp.i
 
-tests/elevatorTests.s: tests/elevatorTests.cpp.s
-.PHONY : tests/elevatorTests.s
+tests/elevatorTestsAddTarget.s: tests/elevatorTestsAddTarget.cpp.s
+.PHONY : tests/elevatorTestsAddTarget.s
 
 # target to generate assembly for a file
-tests/elevatorTests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.s
-.PHONY : tests/elevatorTests.cpp.s
+tests/elevatorTestsAddTarget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.s
+.PHONY : tests/elevatorTestsAddTarget.cpp.s
+
+tests/elevatorTestsInit.o: tests/elevatorTestsInit.cpp.o
+.PHONY : tests/elevatorTestsInit.o
+
+# target to build an object file
+tests/elevatorTestsInit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.o
+.PHONY : tests/elevatorTestsInit.cpp.o
+
+tests/elevatorTestsInit.i: tests/elevatorTestsInit.cpp.i
+.PHONY : tests/elevatorTestsInit.i
+
+# target to preprocess a source file
+tests/elevatorTestsInit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.i
+.PHONY : tests/elevatorTestsInit.cpp.i
+
+tests/elevatorTestsInit.s: tests/elevatorTestsInit.cpp.s
+.PHONY : tests/elevatorTestsInit.s
+
+# target to generate assembly for a file
+tests/elevatorTestsInit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.s
+.PHONY : tests/elevatorTestsInit.cpp.s
+
+tests/elevatorTestsMove.o: tests/elevatorTestsMove.cpp.o
+.PHONY : tests/elevatorTestsMove.o
+
+# target to build an object file
+tests/elevatorTestsMove.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.o
+.PHONY : tests/elevatorTestsMove.cpp.o
+
+tests/elevatorTestsMove.i: tests/elevatorTestsMove.cpp.i
+.PHONY : tests/elevatorTestsMove.i
+
+# target to preprocess a source file
+tests/elevatorTestsMove.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.i
+.PHONY : tests/elevatorTestsMove.cpp.i
+
+tests/elevatorTestsMove.s: tests/elevatorTestsMove.cpp.s
+.PHONY : tests/elevatorTestsMove.s
+
+# target to generate assembly for a file
+tests/elevatorTestsMove.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.s
+.PHONY : tests/elevatorTestsMove.cpp.s
+
+tests/elevatorTestsVisitAll.o: tests/elevatorTestsVisitAll.cpp.o
+.PHONY : tests/elevatorTestsVisitAll.o
+
+# target to build an object file
+tests/elevatorTestsVisitAll.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.o
+.PHONY : tests/elevatorTestsVisitAll.cpp.o
+
+tests/elevatorTestsVisitAll.i: tests/elevatorTestsVisitAll.cpp.i
+.PHONY : tests/elevatorTestsVisitAll.i
+
+# target to preprocess a source file
+tests/elevatorTestsVisitAll.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.i
+.PHONY : tests/elevatorTestsVisitAll.cpp.i
+
+tests/elevatorTestsVisitAll.s: tests/elevatorTestsVisitAll.cpp.s
+.PHONY : tests/elevatorTestsVisitAll.s
+
+# target to generate assembly for a file
+tests/elevatorTestsVisitAll.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.s
+.PHONY : tests/elevatorTestsVisitAll.cpp.s
 
 # Help Target
 help:
@@ -631,12 +727,24 @@ help:
 	@echo "... Catch2WithMain"
 	@echo "... Elevator"
 	@echo "... ElevatorTests"
+	@echo "... src/elevator.o"
+	@echo "... src/elevator.i"
+	@echo "... src/elevator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... tests/elevatorTests.o"
-	@echo "... tests/elevatorTests.i"
-	@echo "... tests/elevatorTests.s"
+	@echo "... tests/elevatorTestsAddTarget.o"
+	@echo "... tests/elevatorTestsAddTarget.i"
+	@echo "... tests/elevatorTestsAddTarget.s"
+	@echo "... tests/elevatorTestsInit.o"
+	@echo "... tests/elevatorTestsInit.i"
+	@echo "... tests/elevatorTestsInit.s"
+	@echo "... tests/elevatorTestsMove.o"
+	@echo "... tests/elevatorTestsMove.i"
+	@echo "... tests/elevatorTestsMove.s"
+	@echo "... tests/elevatorTestsVisitAll.o"
+	@echo "... tests/elevatorTestsVisitAll.i"
+	@echo "... tests/elevatorTestsVisitAll.s"
 .PHONY : help
 
 

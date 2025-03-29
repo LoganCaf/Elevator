@@ -69,33 +69,97 @@ include CMakeFiles/ElevatorTests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ElevatorTests.dir/flags.make
 
-CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.o: CMakeFiles/ElevatorTests.dir/flags.make
-CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.o: /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTests.cpp
-CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.o: CMakeFiles/ElevatorTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/warpc/Nextcloud/code/c++/2025/Elevator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.o -MF CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.o.d -o CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.o -c /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTests.cpp
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.o: CMakeFiles/ElevatorTests.dir/flags.make
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.o: /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsAddTarget.cpp
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.o: CMakeFiles/ElevatorTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/warpc/Nextcloud/code/c++/2025/Elevator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.o -MF CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.o.d -o CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.o -c /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsAddTarget.cpp
 
-CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTests.cpp > CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.i
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsAddTarget.cpp > CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.i
 
-CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTests.cpp -o CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.s
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsAddTarget.cpp -o CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.s
+
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.o: CMakeFiles/ElevatorTests.dir/flags.make
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.o: /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsInit.cpp
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.o: CMakeFiles/ElevatorTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/warpc/Nextcloud/code/c++/2025/Elevator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.o -MF CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.o.d -o CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.o -c /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsInit.cpp
+
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsInit.cpp > CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.i
+
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsInit.cpp -o CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.s
+
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.o: CMakeFiles/ElevatorTests.dir/flags.make
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.o: /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsMove.cpp
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.o: CMakeFiles/ElevatorTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/warpc/Nextcloud/code/c++/2025/Elevator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.o -MF CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.o.d -o CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.o -c /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsMove.cpp
+
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsMove.cpp > CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.i
+
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsMove.cpp -o CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.s
+
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.o: CMakeFiles/ElevatorTests.dir/flags.make
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.o: /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsVisitAll.cpp
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.o: CMakeFiles/ElevatorTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/warpc/Nextcloud/code/c++/2025/Elevator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.o -MF CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.o.d -o CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.o -c /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsVisitAll.cpp
+
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsVisitAll.cpp > CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.i
+
+CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/warpc/Nextcloud/code/c++/2025/Elevator/tests/elevatorTestsVisitAll.cpp -o CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.s
+
+CMakeFiles/ElevatorTests.dir/src/elevator.cpp.o: CMakeFiles/ElevatorTests.dir/flags.make
+CMakeFiles/ElevatorTests.dir/src/elevator.cpp.o: /home/warpc/Nextcloud/code/c++/2025/Elevator/src/elevator.cpp
+CMakeFiles/ElevatorTests.dir/src/elevator.cpp.o: CMakeFiles/ElevatorTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/warpc/Nextcloud/code/c++/2025/Elevator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ElevatorTests.dir/src/elevator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ElevatorTests.dir/src/elevator.cpp.o -MF CMakeFiles/ElevatorTests.dir/src/elevator.cpp.o.d -o CMakeFiles/ElevatorTests.dir/src/elevator.cpp.o -c /home/warpc/Nextcloud/code/c++/2025/Elevator/src/elevator.cpp
+
+CMakeFiles/ElevatorTests.dir/src/elevator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ElevatorTests.dir/src/elevator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/warpc/Nextcloud/code/c++/2025/Elevator/src/elevator.cpp > CMakeFiles/ElevatorTests.dir/src/elevator.cpp.i
+
+CMakeFiles/ElevatorTests.dir/src/elevator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ElevatorTests.dir/src/elevator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/warpc/Nextcloud/code/c++/2025/Elevator/src/elevator.cpp -o CMakeFiles/ElevatorTests.dir/src/elevator.cpp.s
 
 # Object files for target ElevatorTests
 ElevatorTests_OBJECTS = \
-"CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.o"
+"CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.o" \
+"CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.o" \
+"CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.o" \
+"CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.o" \
+"CMakeFiles/ElevatorTests.dir/src/elevator.cpp.o"
 
 # External object files for target ElevatorTests
 ElevatorTests_EXTERNAL_OBJECTS =
 
-ElevatorTests: CMakeFiles/ElevatorTests.dir/tests/elevatorTests.cpp.o
+ElevatorTests: CMakeFiles/ElevatorTests.dir/tests/elevatorTestsAddTarget.cpp.o
+ElevatorTests: CMakeFiles/ElevatorTests.dir/tests/elevatorTestsInit.cpp.o
+ElevatorTests: CMakeFiles/ElevatorTests.dir/tests/elevatorTestsMove.cpp.o
+ElevatorTests: CMakeFiles/ElevatorTests.dir/tests/elevatorTestsVisitAll.cpp.o
+ElevatorTests: CMakeFiles/ElevatorTests.dir/src/elevator.cpp.o
 ElevatorTests: CMakeFiles/ElevatorTests.dir/build.make
 ElevatorTests: _deps/catch2-build/src/libCatch2Main.a
 ElevatorTests: _deps/catch2-build/src/libCatch2.a
 ElevatorTests: CMakeFiles/ElevatorTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/warpc/Nextcloud/code/c++/2025/Elevator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ElevatorTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/warpc/Nextcloud/code/c++/2025/Elevator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ElevatorTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ElevatorTests.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -D TEST_TARGET=ElevatorTests -D TEST_EXECUTABLE=/home/warpc/Nextcloud/code/c++/2025/Elevator/build/ElevatorTests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/warpc/Nextcloud/code/c++/2025/Elevator/build -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D "TEST_PROPERTIES=SKIP_RETURN_CODE;4" -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=ElevatorTests_TESTS -D TEST_REPORTER= -D TEST_OUTPUT_DIR= -D TEST_OUTPUT_PREFIX= -D TEST_OUTPUT_SUFFIX= -D TEST_DL_PATHS= -D TEST_DL_FRAMEWORK_PATHS= -D CTEST_FILE=/home/warpc/Nextcloud/code/c++/2025/Elevator/build/ElevatorTests-b12d07c_tests.cmake -D ADD_TAGS_AS_LABELS=FALSE -P /home/warpc/Nextcloud/code/c++/2025/Elevator/build/_deps/catch2-src/extras/CatchAddTests.cmake
 

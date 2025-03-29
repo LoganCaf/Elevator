@@ -24,36 +24,4 @@ class Elevator{
     std::vector<uint16_t> targets;
 };
 
-Elevator::Elevator(const uint16_t currentFloor){
-
-}
-
-void Elevator::Move(const uint16_t targetFloor){
-
-}
-
-void Elevator::AddDestination(const uint16_t targetFloor){
-
-}
-
-void Elevator::VisitAll(){
-
-}
-
-uint16_t Elevator::GetCurrentFloor(){
-    return currentFloor;
-}
-
-uint32_t Elevator::GetTravelTime(){
-    return travelTime;
-}
-
-std::vector<uint16_t> Elevator::GetVisited(){
-    return visited;
-}
-
-std::vector<uint16_t> Elevator::GetTargets(){
-    return targets;
-}
-
 #endif

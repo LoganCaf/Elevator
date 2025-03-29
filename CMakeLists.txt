@@ -21,7 +21,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(catch2)
 
 # Add a test executable
-add_executable(ElevatorTests tests/elevatorTests.cpp)
+add_executable(ElevatorTests tests/elevatorTestsAddTarget.cpp  tests/elevatorTestsInit.cpp  tests/elevatorTestsMove.cpp  tests/elevatorTestsVisitAll.cpp src/elevator.cpp)
 target_link_libraries(ElevatorTests PRIVATE Catch2::Catch2WithMain)
 
 # Register the test with CTest
