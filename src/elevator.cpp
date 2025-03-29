@@ -23,11 +23,14 @@ void Elevator::Move(const int32_t targetFloor){
 }
 
 void Elevator::AddDestination(const int32_t targetFloor){
-
+    targets.push_back(targetFloor);
 }
 
 void Elevator::VisitAll(){
-
+    for (const int32_t target : targets){
+        Move(target);
+    }
+    targets.clear();
 }
 
 int32_t Elevator::GetCurrentFloor(){

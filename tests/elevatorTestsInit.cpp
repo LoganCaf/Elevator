@@ -9,7 +9,7 @@ TEST_CASE("Elevator initializes to 0", "[ElevatorInit]") {
     REQUIRE(elevator.GetCurrentFloor() == 0);
     REQUIRE(elevator.GetTravelTime() == 0);
     std::vector<int32_t> visited;
-    visited. push_back(0);
+    visited.push_back(0);
     REQUIRE(elevator.GetVisited() == visited);
     REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }
@@ -19,7 +19,7 @@ TEST_CASE("Elevator initializes to 13", "[ElevatorInit]") {
     REQUIRE(elevator.GetCurrentFloor() == 13);
     REQUIRE(elevator.GetTravelTime() == 0);
     std::vector<int32_t> visited;
-    visited. push_back(13);
+    visited.push_back(13);
     REQUIRE(elevator.GetVisited() == visited);
     REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }
@@ -29,7 +29,7 @@ TEST_CASE("Elevator initializes to 65535", "[ElevatorInit]") {
     REQUIRE(elevator.GetCurrentFloor() == 2147483647);
     REQUIRE(elevator.GetTravelTime() == 0);
     std::vector<int32_t> visited;
-    visited. push_back(2147483647);
+    visited.push_back(2147483647);
     REQUIRE(elevator.GetVisited() == visited);
     REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }
@@ -39,7 +39,7 @@ TEST_CASE("Elevator initializes to -65535", "[ElevatorInit]") {
     REQUIRE(elevator.GetCurrentFloor() == -2147483648);
     REQUIRE(elevator.GetTravelTime() == 0);
     std::vector<int32_t> visited;
-    visited. push_back(-2147483648);
+    visited.push_back(-2147483648);
     REQUIRE(elevator.GetVisited() == visited);
     REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }
@@ -49,7 +49,7 @@ TEST_CASE("Elevator initializes to -600", "[ElevatorInit]") {
     REQUIRE(elevator.GetCurrentFloor() == -600);
     REQUIRE(elevator.GetTravelTime() == 0);
     std::vector<int32_t> visited;
-    visited. push_back(-600);
+    visited.push_back(-600);
     REQUIRE(elevator.GetVisited() == visited);
     REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }

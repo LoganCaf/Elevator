@@ -10,10 +10,10 @@ TEST_CASE("Elevator add 10", "[ElevatorAddTarget]") {
     REQUIRE(elevator.GetCurrentFloor() == 0);
     REQUIRE(elevator.GetTravelTime() == 0);
     std::vector<int32_t> visited;
-    visited. push_back(0);
+    visited.push_back(0);
     REQUIRE(elevator.GetVisited() == visited);
     std::vector<int32_t> targets;
-    targets. push_back(10);
+    targets.push_back(10);
     REQUIRE(elevator.GetTargets() == targets);
 }
 
@@ -23,10 +23,10 @@ TEST_CASE("Elevator add itself", "[ElevatorAddTarget]") {
     REQUIRE(elevator.GetCurrentFloor() == 0);
     REQUIRE(elevator.GetTravelTime() == 0);
     std::vector<int32_t> visited;
-    visited. push_back(0);
+    visited.push_back(0);
     REQUIRE(elevator.GetVisited() == visited);
     std::vector<int32_t> targets;
-    targets. push_back(0);
+    targets.push_back(0);
     REQUIRE(elevator.GetTargets() == targets);
 }
 
@@ -36,10 +36,10 @@ TEST_CASE("Elevator add 255", "[ElevatorAddTarget]") {
     REQUIRE(elevator.GetCurrentFloor() == 0);
     REQUIRE(elevator.GetTravelTime() == 0);
     std::vector<int32_t> visited;
-    visited. push_back(0);
+    visited.push_back(0);
     REQUIRE(elevator.GetVisited() == visited);
     std::vector<int32_t> targets;
-    targets. push_back(0);
+    targets.push_back(255);
     REQUIRE(elevator.GetTargets() == targets);
 }
 
@@ -48,15 +48,15 @@ TEST_CASE("Elevator add 255 0 itself", "[ElevatorAddTarget]") {
     elevator.AddDestination(255);
     elevator.AddDestination(0);
     elevator.AddDestination(10);
-    REQUIRE(elevator.GetCurrentFloor() == 0);
+    REQUIRE(elevator.GetCurrentFloor() == 10);
     REQUIRE(elevator.GetTravelTime() == 0);
     std::vector<int32_t> visited;
-    visited. push_back(10);
+    visited.push_back(10);
     REQUIRE(elevator.GetVisited() == visited);
     std::vector<int32_t> targets;
-    targets. push_back(255);
-    targets. push_back(0);
-    targets. push_back(10);
+    targets.push_back(255);
+    targets.push_back(0);
+    targets.push_back(10);
     REQUIRE(elevator.GetTargets() == targets);
 }
 
