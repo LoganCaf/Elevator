@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Elevator.dir/src/elevator.cpp.o"
+  "CMakeFiles/Elevator.dir/src/elevator.cpp.o.d"
   "CMakeFiles/Elevator.dir/src/main.cpp.o"
   "CMakeFiles/Elevator.dir/src/main.cpp.o.d"
   "Elevator"

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/warpc/Nextcloud/code/c++/2025/Elevator/src/elevator.cpp" "CMakeFiles/Elevator.dir/src/elevator.cpp.o" "gcc" "CMakeFiles/Elevator.dir/src/elevator.cpp.o.d"
   "/home/warpc/Nextcloud/code/c++/2025/Elevator/src/main.cpp" "CMakeFiles/Elevator.dir/src/main.cpp.o" "gcc" "CMakeFiles/Elevator.dir/src/main.cpp.o.d"
   )
 

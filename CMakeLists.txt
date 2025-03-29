@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Add the main executable
-add_executable(Elevator src/main.cpp)
+add_executable(Elevator src/main.cpp src/elevator.cpp)
 
 # Enable testing
 enable_testing()

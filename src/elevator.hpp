@@ -12,11 +12,12 @@ class Elevator{
     void AddDestination(const int32_t targetFloor);
     void VisitAll();
 
+    
+    uint32_t GetTravelTime() const;
+    std::vector<int32_t> GetVisited() const;
     // needed for testing
-    int32_t GetCurrentFloor();
-    uint32_t GetTravelTime();
-    std::vector<int32_t> GetVisited();
-    std::vector<int32_t> GetTargets();
+    int32_t GetCurrentFloor() const;
+    std::vector<int32_t> GetTargets() const;
     private:
     int32_t currentFloor;
     uint32_t travelTime;

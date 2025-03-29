@@ -547,6 +547,7 @@ src/elevator.o: src/elevator.cpp.o
 
 # target to build an object file
 src/elevator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Elevator.dir/build.make CMakeFiles/Elevator.dir/src/elevator.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/src/elevator.cpp.o
 .PHONY : src/elevator.cpp.o
 
@@ -555,6 +556,7 @@ src/elevator.i: src/elevator.cpp.i
 
 # target to preprocess a source file
 src/elevator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Elevator.dir/build.make CMakeFiles/Elevator.dir/src/elevator.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/src/elevator.cpp.i
 .PHONY : src/elevator.cpp.i
 
@@ -563,6 +565,7 @@ src/elevator.s: src/elevator.cpp.s
 
 # target to generate assembly for a file
 src/elevator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Elevator.dir/build.make CMakeFiles/Elevator.dir/src/elevator.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElevatorTests.dir/build.make CMakeFiles/ElevatorTests.dir/src/elevator.cpp.s
 .PHONY : src/elevator.cpp.s
 

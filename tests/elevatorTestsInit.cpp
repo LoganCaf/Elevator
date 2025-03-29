@@ -24,7 +24,7 @@ TEST_CASE("Elevator initializes to 13", "[ElevatorInit]") {
     REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }
 
-TEST_CASE("Elevator initializes to 65535", "[ElevatorInit]") {
+TEST_CASE("Elevator initializes to 2147483647", "[ElevatorInit]") {
     Elevator elevator(2147483647);
     REQUIRE(elevator.GetCurrentFloor() == 2147483647);
     REQUIRE(elevator.GetTravelTime() == 0);
@@ -34,7 +34,7 @@ TEST_CASE("Elevator initializes to 65535", "[ElevatorInit]") {
     REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }
 
-TEST_CASE("Elevator initializes to -65535", "[ElevatorInit]") {
+TEST_CASE("Elevator initializes to -2147483648", "[ElevatorInit]") {
     Elevator elevator(-2147483648);
     REQUIRE(elevator.GetCurrentFloor() == -2147483648);
     REQUIRE(elevator.GetTravelTime() == 0);

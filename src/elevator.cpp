@@ -33,18 +33,18 @@ void Elevator::VisitAll(){
     targets.clear();
 }
 
-int32_t Elevator::GetCurrentFloor(){
+int32_t Elevator::GetCurrentFloor() const{
     return currentFloor;
 }
 
-uint32_t Elevator::GetTravelTime(){
+uint32_t Elevator::GetTravelTime() const{
     return travelTime;
 }
 
-std::vector<int32_t> Elevator::GetVisited(){
+std::vector<int32_t> Elevator::GetVisited() const{
     return visited;
 }
 
-std::vector<int32_t> Elevator::GetTargets(){
+std::vector<int32_t> Elevator::GetTargets() const{
     return targets;
 }
