@@ -9,7 +9,17 @@ Elevator::Elevator(const int32_t currentFloor){
 }
 
 void Elevator::Move(const int32_t targetFloor){
-
+    if (targetFloor == currentFloor){
+        return;
+    }
+    if (targetFloor > currentFloor){
+        travelTime += (targetFloor - currentFloor) * 10;
+    }
+    else{
+        travelTime += (currentFloor - targetFloor) * 10;
+    }
+    currentFloor = targetFloor;
+    visited.push_back(currentFloor);
 }
 
 void Elevator::AddDestination(const int32_t targetFloor){

@@ -33,11 +33,25 @@ TEST_CASE("Elevator moves to 3 and 255", "[ElevatorMove]") {
     elevator.Move(3);
     elevator.Move(255);
     REQUIRE(elevator.GetCurrentFloor() == 255);
-    REQUIRE(elevator.GetTravelTime() == 2580);
+    REQUIRE(elevator.GetTravelTime() == 2550);
     std::vector<int32_t> visited;
     visited. push_back(0);
     visited. push_back(3);
     visited. push_back(255);
+    REQUIRE(elevator.GetVisited() == visited);
+    REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
+}
+
+TEST_CASE("Elevator moves to 255 and 3", "[ElevatorMove]") {
+    Elevator elevator(0);
+    elevator.Move(255);
+    elevator.Move(3);
+    REQUIRE(elevator.GetCurrentFloor() == 3);
+    REQUIRE(elevator.GetTravelTime() == 5070);
+    std::vector<int32_t> visited;
+    visited. push_back(0);
+    visited. push_back(255);
+    visited. push_back(3);
     REQUIRE(elevator.GetVisited() == visited);
     REQUIRE(elevator.GetTargets() == std::vector<int32_t>());
 }
