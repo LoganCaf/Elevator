@@ -2,7 +2,7 @@
 Elevator simulator
 
 Assumptions:
-The Floor Range is (-2147483648 , 2147483647).
+The Floor Range is (-2147483648 , 2147483647).\n
 The total travel time does not exceed 4294967295 and can't be negative.
 
 Unimplemented features:
@@ -15,6 +15,6 @@ Building:
 The program is already build by default but to rebuild it you can do so in the build directory via "cmake --build ." as this project uses cmake.
 
 Usage:
-The main Executable is Elevator and the test Executable is ElevatorTests.
-When running Elevator, you will first be asked to enter whatn number floor you wich to start at. Then you will be asked to provide a comma seperated list of floors to visit. Finally, it will output the total travel time and the floors you have visited (including the one you start at).
+The main Executable is Elevator and the test Executable is ElevatorTests.\n
+When running Elevator, you will first be asked to enter whatn number floor you wich to start at. Then you will be asked to provide a comma seperated list of floors to visit. Finally, it will output the total travel time and the floors you have visited (including the one you start at).\n
 When running ElevatorTests, it asks for no input and outputs which tests fail and how many pass or fail (All are currently passing, so no failing information is shown).
