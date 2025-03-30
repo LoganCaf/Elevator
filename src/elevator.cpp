@@ -1,3 +1,10 @@
+/**
+ * @file elevator.cpp
+ * @author Logan Caffey
+ * @brief Elevator class code
+ * 
+ */
+
 #include <cstdint>
 #include <vector>
 #include "elevator.hpp"
@@ -9,13 +16,13 @@ Elevator::Elevator(const int32_t currentFloor){
 }
 
 void Elevator::Move(const int32_t targetFloor){
-    if (targetFloor == currentFloor){
+    if (targetFloor == currentFloor){ //dont move if at target
         return;
     }
-    if (targetFloor > currentFloor){
+    if (targetFloor > currentFloor){ //move up  iuf target is above current
         travelTime += (targetFloor - currentFloor) * 10;
     }
-    else{
+    else{ //move down if target is below current
         travelTime += (currentFloor - targetFloor) * 10;
     }
     currentFloor = targetFloor;

@@ -1,3 +1,10 @@
+/**
+ * @file elevatorTestsInit.cpp
+ * @author Logan Caffey
+ * @brief tests for the initialazation of the Elevator class
+ * 
+ */
+
 #include <cstdint>
 #include <catch2/catch_test_macros.hpp>
 #include <vector>

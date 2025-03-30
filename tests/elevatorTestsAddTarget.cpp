@@ -1,3 +1,10 @@
+/**
+ * @file elevatorTestsAddTarget.cpp
+ * @author Logan Caffey
+ * @brief tests for the addTarget Elevator function
+ * 
+ */
+
 #include <cstdint>
 #include <catch2/catch_test_macros.hpp>
 #include <vector>

@@ -1,3 +1,10 @@
+/**
+ * @file main.cpp
+ * @author Logan Caffey
+ * @brief Main function
+ * 
+ */
+
 #include <iostream>
 #include <cstdint>
 #include <string>
