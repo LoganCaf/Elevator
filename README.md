@@ -2,7 +2,7 @@
 Elevator simulator
 
 Assumptions:
-The Floor Range is (-2147483648 , 2147483647)
+The Floor Range is (-2147483648 , 2147483647).
 The total travel time does not exceed 4294967295 and can't be negative.
 
 Unimplemented features:
