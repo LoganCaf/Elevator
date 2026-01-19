@@ -24,7 +24,7 @@ class Elevator{
      */
     Elevator(const int32_t currentFloor);
     /**
-     * @brief moves the elevator to the taret floor
+     * @brief Moves the elevator to the target floor
      * 
      * @param targetFloor 
      */
@@ -40,6 +40,12 @@ class Elevator{
      * 
      */
     void VisitAll();
+    /**
+     * @brief Visits all target floors using a greedy "nearest next stop" scheduler.
+     *
+     * Reorders targets to reduce total travel time compared to FIFO visitation.
+     */
+    void VisitAllNearest();
 
     /**
      * @brief Get the Travel Time object
@@ -68,7 +74,7 @@ class Elevator{
     std::vector<int32_t> GetTargets() const;
     private:
     int32_t currentFloor; // the floor the elevator is on
-    uint32_t travelTime; // the total travel thime the elevator has done thus far
+    uint32_t travelTime; // the total travel time the elevator has done thus far
     std::vector<int32_t> visited; // a vector of visited floors in order
     std::vector<int32_t> targets; // a vector of to be visited floors in order
 };

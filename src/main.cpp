@@ -19,7 +19,7 @@ int main(){
     Elevator elevator(start);
 
     string floors;
-    cout << "Enter the floors you want to go to seperated by commas\n";
+    cout << "Enter the floors you want to go to separated by commas\n";
     cin >> floors;
     
     string currentFloor;
@@ -33,7 +33,15 @@ int main(){
         }
     }
     elevator.AddDestination(stoi(currentFloor));
-    elevator.VisitAll();
+
+    string optimize;
+    cout << "Optimize route? (y/n)\n";
+    cin >> optimize;
+    if (!optimize.empty() && (optimize[0] == 'y' || optimize[0] == 'Y')){
+        elevator.VisitAllNearest();
+    } else {
+        elevator.VisitAll();
+    }
     cout << "travel time: " << elevator.GetTravelTime() << " floors visited: ";
     cout << elevator.GetVisited().at(0);
     for (uint32_t ind=1;ind<elevator.GetVisited().size();++ind){

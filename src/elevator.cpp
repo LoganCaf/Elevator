@@ -6,6 +6,7 @@
  */
 
 #include <cstdint>
+#include <cstddef>
 #include <vector>
 #include "elevator.hpp"
 
@@ -38,6 +39,27 @@ void Elevator::VisitAll(){
         Move(target);
     }
     targets.clear();
+}
+
+void Elevator::VisitAllNearest(){
+    while (!targets.empty()){
+        std::size_t bestIndex = 0;
+        int64_t bestDiff = static_cast<int64_t>(targets[0]) - static_cast<int64_t>(currentFloor);
+        uint64_t bestDistance = static_cast<uint64_t>(bestDiff < 0 ? -bestDiff : bestDiff);
+
+        for (std::size_t i = 1; i < targets.size(); ++i){
+            const int64_t diff = static_cast<int64_t>(targets[i]) - static_cast<int64_t>(currentFloor);
+            const uint64_t distance = static_cast<uint64_t>(diff < 0 ? -diff : diff);
+            if (distance < bestDistance){
+                bestDistance = distance;
+                bestIndex = i;
+            }
+        }
+
+        const int32_t nextStop = targets[bestIndex];
+        targets.erase(targets.begin() + static_cast<std::ptrdiff_t>(bestIndex));
+        Move(nextStop);
+    }
 }
 
 int32_t Elevator::GetCurrentFloor() const{
